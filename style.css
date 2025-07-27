@@ -260,32 +260,62 @@ body {
   50% { border-color: transparent }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding: 3rem 1rem;
-    }
-
-    .hero-content,
-    .hero-visual {
-        min-width: 100%;
-        text-align: center;
-    }
-
-    .hero-visual img {
-        width: 150px;
-        height: 150px;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
+/* Tablettes et plus larges */
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 3rem;
+  }
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .hero-content {
+    max-width: 50%;
+  }
+  .hero-visual {
+    max-width: 45%;
+    margin-top: 0;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-name {
+    font-size: 3.5rem;
+  }
+  .hero-role {
+    font-size: 1.75rem;
+  }
+  .hero-description {
+    font-size: 1.25rem;
+  }
+  .btn-primary {
+    font-size: 1.25rem;
+  }
+  .hero-scroll {
+    display: none; /* Optionnel sur grand écran */
+  }
 }
 
-
+/* Grands écrans */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .hero-name {
+    font-size: 4rem;
+  }
+  .hero-role {
+    font-size: 2rem;
+  }
+  .hero-description {
+    font-size: 1.375rem;
+  }
+  .btn-primary {
+    font-size: 1.375rem;
+  }
+}
 
 /* Boutons */
 .btn {
@@ -899,5 +929,196 @@ section {
     .contact-form {
         margin: 0 15px;
     }
+}
+
+/* Amélioration des media queries pour responsive complet */
+
+/* Très petits écrans mobiles (320px à 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 0 !important; /* override padding-left dans hero-content */
+  }
+
+  .hero-content {
+    padding-left: 0 !important;
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.8rem !important;
+  }
+
+  .hero-greeting,
+  .hero-name,
+  .hero-role {
+    font-size: 1.6rem !important;
+    margin-top: 60px; /* ou padding-top: 60px; selon besoin */
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Nav */
+  .nav-menu {
+    background: var(--bg-light);
+    padding: 2rem 1rem;
+  }
+
+  /* Section titles plus petits */
+  .section-title {
+    font-size: 1.75rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  /* Boutons plus petits */
+  .btn, .btn-primary {
+    padding: 0.5rem 1rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Projets et compétences full width */
+  .projects-grid,
+  .skills-grid,
+  .contact-content {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Project card margin ajustée */
+  .project-card,
+  .skill-item,
+  .contact-form {
+    margin: 0 0 !important;
+  }
+}
+
+/* Mobiles moyens à tablettes (481px à 767px) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    padding: 3rem 2rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    padding-left: 0 !important;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding-left: 0 !important;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    max-width: 350px;
+    margin: 2rem auto 0 auto;
+  }
+}
+
+/* Tablettes et plus larges déjà présentes (>=768px) */
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 3rem;
+    flex-wrap: nowrap;
+  }
+
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-left: 0 !important;
+  }
+
+  .hero-content {
+    max-width: 50%;
+    padding-left: 7rem; /* garde ton padding gauche */
+  }
+
+  .hero-visual {
+    max-width: 45%;
+    margin-top: 0;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-name {
+    font-size: 3.5rem;
+  }
+
+  .hero-role {
+    font-size: 1.75rem;
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+  }
+
+  .btn-primary {
+    font-size: 1.25rem;
+  }
+
+  .hero-scroll {
+    display: none;
+  }
+}
+
+/* Grands écrans (>=1200px) */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-name {
+    font-size: 4rem;
+  }
+
+  .hero-role {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1.375rem;
+  }
+
+  .btn-primary {
+    font-size: 1.375rem;
+  }
 }
 
