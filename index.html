@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Front-End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation principale -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="#accueil">King Dev</a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                    <a href="#a-propos" class="nav-link">À propos</a>
+                    <a href="#projets" class="nav-link">Projets</a>
+                    <a href="#competences" class="nav-link">Compétences</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-greeting">Salut, je suis</span>
+                    <span class="hero-name">Habib Coulibaly</span>
+                    <span class="hero-role">Développeur Front-End</span>
+                </h1>
+                <p class="hero-description">
+                    Je crée des expériences web modernes et interactives avec une attention particulière aux détails et à l'expérience utilisateur.
+                </p>
+                <a href="#contact" class="btn btn-primary">Me contacter</a>
+            </div>
+            <div class="hero-visual">
+                <img src="images/hero-5.svg" alt="ma photo" class="hero-img" />
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about" id="a-propos">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/dev-1.png" alt="Photo de profil" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <h3>Passionné par le développement web</h3>
+                    <p>
+                        Développeur front-end, je me spécialise dans la création d'interfaces utilisateur modernes et performantes. Mon approche combine créativité et rigueur technique pour offrir des expériences web exceptionnelles.
+                    </p>
+                    <p>
+                        J'aime transformer des concepts créatifs en sites web fonctionnels et esthétiques, en utilisant les dernières technologies et tendances du développement front-end. Mon objectif est de créer des solutions qui allient beauté visuelle et performance optimale.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Clients satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+<section id="projets" class="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <h2 class="section-title" id="projects-title">Mes Projets</h2>
+    <div class="projects-grid">
+      <article class="project-card animate">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Projet E-commerce moderne">
+          <div class="project-overlay" aria-hidden="true">
+            <a href="#" class="project-link" aria-label="Voir le projet en ligne"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" aria-label="Voir le code source GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Plateforme E-commerce</h3>
+          <p>Application e-commerce moderne avec panier, gestion des commandes et interface d'administration. Développée avec HTML5, CSS3 et JavaScript vanilla.</p>
+          <div class="project-tech" aria-label="Technologies utilisées">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card animate">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dashboard Analytics moderne">
+          <div class="project-overlay" aria-hidden="true">
+            <a href="#" class="project-link" aria-label="Voir le projet en ligne"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" aria-label="Voir le code source GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Dashboard Analytics</h3>
+          <p>Interface de tableau de bord pour analyser les données avec graphiques interactifs et visualisations en temps réel. Design responsive et moderne.</p>
+          <div class="project-tech" aria-label="Technologies utilisées">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Chart.js</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card animate">
+        <div class="project-image">
+          <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Portfolio Photographe professionnel">
+          <div class="project-overlay" aria-hidden="true">
+            <a href="#" class="project-link" aria-label="Voir le projet en ligne"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="project-link" aria-label="Voir le code source GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Portfolio Photographe</h3>
+          <p>Site portfolio pour photographe professionnel avec galerie interactive, animations fluides et système de contact intégré.</p>
+          <div class="project-tech" aria-label="Technologies utilisées">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Lightbox</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="competences" class="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <h2 class="section-title" id="skills-title">Mes Compétences</h2>
+    <div class="skills-content">
+      <div class="skills-grid">
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence HTML5 à 95 pour cent">
+          <div class="skill-icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+          <h3>HTML5</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 95%;"></div>
+          </div>
+          <span class="skill-percentage">95%</span>
+        </article>
+
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence CSS3 à 90 pour cent">
+          <div class="skill-icon"><i class="fab fa-css3-alt" aria-hidden="true"></i></div>
+          <h3>CSS3</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 90%;"></div>
+          </div>
+          <span class="skill-percentage">90%</span>
+        </article>
+
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence JavaScript à 85 pour cent">
+          <div class="skill-icon"><i class="fab fa-js-square" aria-hidden="true"></i></div>
+          <h3>JavaScript</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 85%;"></div>
+          </div>
+          <span class="skill-percentage">85%</span>
+        </article>
+
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence React à 80 pour cent">
+          <div class="skill-icon"><i class="fab fa-react" aria-hidden="true"></i></div>
+          <h3>React</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 80%;"></div>
+          </div>
+          <span class="skill-percentage">80%</span>
+        </article>
+
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence Git à 88 pour cent">
+          <div class="skill-icon"><i class="fab fa-git-alt" aria-hidden="true"></i></div>
+          <h3>Git</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 88%;"></div>
+          </div>
+          <span class="skill-percentage">88%</span>
+        </article>
+
+        <article class="skill-item animate" tabindex="0" aria-label="Compétence Sass à 82 pour cent">
+          <div class="skill-icon"><i class="fab fa-sass" aria-hidden="true"></i></div>
+          <h3>Sass</h3>
+          <div class="skill-progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 82%;"></div>
+          </div>
+          <span class="skill-percentage">82%</span>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Loader -->
+    <div id="loader" role="status" aria-label="Chargement en cours">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Contenu principal -->
+    <main id="main-content" style="display:none">
+
+        <!-- Section Contact -->
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 class="section-title" id="contact-title">Contactez-moi</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Parlons de votre projet</h3>
+                        <p>Je serais ravi de discuter de vos idées et de voir comment nous pouvons collaborer pour créer quelque chose d'extraordinaire.</p>
+                        <div class="contact-details">
+                            <div class="contact-item" role="contentinfo">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>Habibmbacoulibaly@gmail.com</span>
+                            </div>
+                            <div class="contact-item" role="contentinfo">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>+225 07 88 84 56 76</span>
+                            </div>
+                            <div class="contact-item" role="contentinfo">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Abidjan, Côte d'Ivoire</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contact-form" aria-label="Formulaire de contact">
+                        <div class="form-group">
+                            <label for="name" class="sr-only">Nom</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="sr-only">Message</label>
+                            <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <p id="confirmation-message" style="display:none;color:green;margin-top:10px">Message envoyé avec succès !</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Habib M'ba-Coulibaly</h3>
+                        <p>Développeur Front-End passionné par la création d'expériences web exceptionnelles.</p>
+                    </div>
+                    <nav class="footer-links" aria-label="Navigation du bas de page">
+                        <h4>Navigation</h4>
+                        <a href="#accueil">Accueil</a>
+                        <a href="#a-propos">À propos</a>
+                        <a href="#projets">Projets</a>
+                        <a href="#competences">Compétences</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    <div class="footer-social">
+                        <h4>Suivez-moi</h4>
+                        <div class="social-links" role="navigation" aria-label="Réseaux sociaux">
+                            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Habib M'ba-Coulibaly. Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+
+</html>
